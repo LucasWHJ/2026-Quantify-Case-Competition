@@ -1,0 +1,22 @@
+dataset,field,unit,definition,caveat
+Exhibit A,line,text,Organizer insurance line name,Technology Products Liability is not automatically interchangeable with Tech E&O
+Exhibit A,year,calendar year,Fiscal year 2021 to 2025,Historical case period preserved
+Exhibit A,exposure,line-specific units,Volume of insured business,Do not sum heterogeneous units or assume unique clients
+Exhibit A,earned_premium_cad,CAD,Premium for coverage earned in the period,Converted from source CAD thousands
+Exhibit A,claim_count,claims,Recorded claims in the period,Not unique insureds
+Exhibit A,incurred_losses_cad,CAD,Incurred claims including reserves,Converted from source CAD thousands
+Exhibit A,operating_expenses_cad,CAD,Operating costs for the period,Converted from source CAD thousands
+Derived,combined_ratio,decimal,Incurred losses plus operating expenses divided by earned premium,Excludes investment income
+Derived,claim_frequency,claims per exposure,Claim count divided by exposure,Valid within compatible exposure units
+Derived,average_severity_cad,CAD per claim,Incurred losses divided by claim count,Historical severity rather than an AI rate
+Derived,pure_premium_cad,CAD per exposure,Incurred losses divided by exposure,Equals frequency times average severity
+Derived,premium_per_exposure_cad,CAD per exposure,Earned premium divided by exposure,Includes price and business-mix effects
+Exhibit B,incident_id,text,Organizer external incident identifier,Not a TSI claim identifier
+Exhibit B,industry,text,Reported incident industry,Correlated with failure mechanism
+Exhibit B,failure_type,text,Reported failure mechanism,Often determined after an incident
+Exhibit B,human_oversight,Yes or No,Recorded oversight flag,Does not establish verified control quality or low autonomy
+Exhibit B,estimated_insured_loss_cad,CAD,External event estimated insured loss,Not TSI paid claims or future contractual payout
+Derived,share_of_total_log_variance,decimal,Sequential explained sum of squares divided by total log-loss sum of squares,Depends on variable order
+Derived,unique_share_of_total_log_variance,decimal,Extra sum of squares after controlling all other modeled factors,Not a causal contribution
+Pilot,claim_frequency,annual claims per policy,Illustrative expected annual claim count per policy,Assumption rather than Exhibit B estimate
+Pilot,mean_covered_cost_cad,CAD per claim,Mean contract-adjusted cost including defence in the illustration,Requires separate calibration

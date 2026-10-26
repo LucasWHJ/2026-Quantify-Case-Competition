@@ -1,0 +1,9 @@
+order,term,share_of_total_log_variance
+"industry, failure_type, human_oversight",industry,0.2224283668179179
+"industry, failure_type, human_oversight",failure_type,0.7113628149499593
+"industry, failure_type, human_oversight",human_oversight,0.016298930740154503
+"industry, failure_type, human_oversight",Residual,0.04990988749196821
+"failure_type, industry, human_oversight",failure_type,0.9306094097827384
+"failure_type, industry, human_oversight",industry,0.0031817719851388745
+"failure_type, industry, human_oversight",human_oversight,0.016298930740154524
+"failure_type, industry, human_oversight",Residual,0.04990988749196817
